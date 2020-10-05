@@ -1,0 +1,162 @@
+html {
+  font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  text-decoration: none;
+}
+
+
+#bigcontainer {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+}
+
+/************************** BANDEAU *************************/
+
+#bandeau {
+  width: 100%;
+  height: 100px;
+  background-color : #283618;
+  text-align: center;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  border-bottom: solid 3px #eeeeee;
+}
+
+#name {
+  color: #FEFAE0;
+  font-size: x-large;
+}
+
+.hexagone {
+  position: absolute;
+  top: 55%;
+  width: 86.60254px;
+  visibility: hidden;
+  overflow: hidden;
+  -webkit-filter : drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+  filter : drop-shadow(0px 0px 5px rgba(0,0,0,0.6));
+}
+.hexagone:after {
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  content: "";
+  display: block;
+  margin-top: 28.86751%;
+  padding-bottom: 86.602%;
+}
+.hexagone .hexagonemain{
+  display: block;
+  position: absolute;
+  width: 100%;
+  padding-bottom: 115.47005%;
+  overflow: hidden;
+  visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+  -ms-transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+  transform: rotate3d(0, 0, 1, -60deg) skewY(30deg);
+  z-index: 1;
+}
+.hexagone .hexagonemainbefore{
+  content: "";
+  display: block;
+  position: absolute;
+  visibility: visible;
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: #FEFAE0;
+  -webkit-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+  -ms-transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+  transform: skewY(-30deg) rotate3d(0, 0, 1, 60deg);
+}
+.hexagone .hexagonecontent{
+  overflow-y: auto;
+  width: 100%;
+  display: block;
+  position: absolute;
+  visibility: visible;
+  bottom: 25%;
+  top: 25%;
+  left: 0;
+  z-index: 3;
+}
+.hexagone img{
+  padding-top:10px;
+  height: 90%;
+}
+
+a {
+  color: #5F975D;
+}
+
+#menu {
+  display: flex;
+  justify-content: space-between;
+  width: 370px;
+}
+
+/************************* BODY *************************/
+
+#container {
+  display: flex;
+  height: 100%;
+  margin-top: 100px;
+}
+
+#body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.element {
+  padding: 5%;
+  width: 100%;
+}
+
+.intro {
+  background-color: #606C38;
+  min-height: 50vh;
+  color: #FEFAE0;
+}
+
+.photo {
+  background-color: #FEFAE0;
+  min-height: 78vh;
+}
+
+.marques {
+  background-color: #DDA15E;
+  min-height: 25vh;
+  display: flex;
+  justify-content: space-between;
+}
+
+.marques img {
+  width:75%;
+}
+
+/************************* CONTACT *************************/
+
+.contact {
+  background-color: #BC6C25;
+  min-height: 50vh;
+  color: #FEFAE0;
+}
+
+.onglet {
+  width: 120px;
+}
+
+.onglet-left {
+  text-align: right;
+}
+
+.onglet-right {
+  text-align: left;
+}
