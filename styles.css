@@ -43,10 +43,13 @@
   #marques > img {
     width: 25%;
   } 
+
+  #telephone {
+    display: none;
+  }
 }
 
-
-@media all and (min-width: 1024px)
+@media all and (min-width: 1025px)
 {
 
   :root { 
@@ -75,6 +78,22 @@
   #marques > img {
     width: 17%;
   } 
+    
+  #telephone {
+    position: fixed;
+    right: 3%;
+    background-color: var(--orange-dark);
+    padding: 0.5%;
+    font-weight: bolder;
+    font-size: smaller;
+    display: flex;
+    max-width: 130px;
+    justify-content: flex-end;
+  }
+
+  #telephone img {
+    width: 25%;
+  }
 
 }
 
