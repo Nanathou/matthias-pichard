@@ -1,74 +1,168 @@
-
 <html lang="fr">
-<head>
-  <link rel="stylesheet" href="styles.css" type="text/css" >
-  <meta charset="utf-8">
-  <meta name="description" content="Artisan technicien en génie climatique installe, entretien et dépanne votre système de climatisation">
-  <title>Matthias Pichard, climatisation, entretien, dépannage</title>
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
-</head>
-<body>
-  <div id="bigcontainer">
-    <div id="bandeau">
-      <div id="name">Matthias Pichard</div>
-      <div id="menu">
-        <div class="onglet onglet-left">
-          <a href="#rea">PRESTATIONS</a>
-        </div>
-        <div class="onglet onglet-right">
-          <a href="#contact">CONTACT</a>
-        </div>
-      </div>
-
-      <a href="#bigcontainer" class="hexagone">
-        <div class="hexagonemain">
-          <div class="hexagonemainbefore">
-            <img src="./assets/flocon.png">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="mon_script.js"></script>
+    <link rel="stylesheet" href="styles.css" type="text/css" />
+    <meta charset="utf-8" />
+    <meta
+      name="description"
+      content="Artisan technicien en génie climatique installe, entretien et dépanne votre système de climatisation"
+    />
+    <title>Matthias Pichard, climatisation, entretien, dépannage</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  </head>
+  <body>
+    <div id="bigcontainer">
+      <div id="bandeau">
+        <div id="name">Matthias Pichard</div>
+        <div id="menu">
+          <div>
+            <a href="#prestations">PRESTATIONS</a>
+          </div>
+          <div>
+            <a href="#contact">CONTACT</a>
           </div>
         </div>
-      </a>
-    </div>
-    <div id="container">
-      <div id="intro" class="element">
-        <div id="photosMatth">
-          <img src="./assets/matthias2.jpg"/>
-          <img src="./assets/matthias.jpg"/>
+
+        <a href="#bigcontainer" class="hexagone">
+          <div class="hexagonemain">
+            <div class="hexagonemainbefore">
+              <img src="./assets/flocon.png" />
+            </div>
+          </div>
+        </a>
+      </div>
+      <div id="container">
+        <div id="intro" class="element">
+          <span>
+            Depuis plus de 10 ans, la climatisation est mon secteur d'activité.
+            En tant qu'entrepreneur expérimenté et soucieux de votre confort je
+            réalise l'installation, l'entretien et le dépannage de votre système
+            de climatisation.
+          </span>
+          <img src="./assets/matthias.jpg" />
         </div>
-        <span> prévisions météorologiques annoncent des étés de plus en plus chauds, avec des canicules de plus en plus fréquentes. Pour rafraîchir l’air intérieur, un climatiseur s’avèrera bien plus efficace qu’un ventilateur, dont l’action se limite à brasser l’air chaud. Les besoins en climatisation peuvent toutefois varier d’une région à l’autre et suivant l’exposition de la maison. Climatiseur mobile ou fixe, monobloc, monosplit ou multisplit, le choix est vaste. Tout dépend du type d’habitation à climatiser (appartement ou maison individuelle, maison traditionnelle ou contemporaine, etc.), de la configuration et de l’importance des volumes à rafraîchir et de vos besoins (climatisation seule ou climatisation et chauffage). Pensez également à définir l’endroit où le climatiseur sera installé.
-        </span>
-      </div>
 
-      <div id="rea" class="element">
-        <img src="./assets/unite-interieure.jpg"/>
-      </div>
-
-      <div id="marques" class="element">
-        <img src="./assets/daikin.png"/>
-        <img src="./assets/mitsu.svg">
-        <div>
-          <img src="./assets/heiwa_haut.png"/>
-          <img src="./assets/heiwa_bas.png"/>
+        <div id="prestations" class="element">
+          <div id="menuPresta">
+            <input
+              name="presta_selectionne"
+              type="radio"
+              id="btnClim"
+              checked="checked"
+            /><label for="btnClim">CLIMATISATION</label>
+            <input
+              name="presta_selectionne"
+              type="radio"
+              id="btnGainable"
+            /><label for="btnGainable">GAINABLE</label>
+            <input
+              name="presta_selectionne"
+              type="radio"
+              id="btnEntretien"
+            /><label for="btnEntretien">ENTRETIEN / DEPANNAGE</label>
+          </div>
+          <div id="cadre">
+            <div id="description">
+              <div>
+                <img src="assets/unite-interieure.jpg" />
+                <span>
+                  Un système de climatisation de type split se compose d'un
+                  groupe exterieur et de une (monosplit) ou plusieurs unités
+                  intérieures (multisplit).<br />
+                  L'emplacement des unités intérieures est importante pour
+                  garantir une bonne répartition de l'air conditionné dans vos
+                  pièces.<br />
+                  Je vous conseille sur les emplacements tout en prenant en
+                  compte vos préférences pour l'esthétique intérieur et
+                  extérieur. Précautions d'installation
+                </span>
+              </div>
+              <div>
+                <img src="assets/gainable.jpg" />
+                <span>
+                  Un climatiseur gainable est composé d'un groupe extérieur et
+                  une unité intérieur dissimulé dans les combles qui va
+                  distribuer l'air conditionné au travers un réseau de gaines
+                  dans les différentes pièces. Seule une bouche de soufflage
+                  sera apparente dans chaque pièce souhaitée et une grille de
+                  reprise sera installée pour l'air entrant.<br />
+                  Ce système plus esthétique est idéal pour climatiser plusieurs
+                  pièces en même temps si vous disposez de combles ou faux
+                  plafond.<br />
+                </span>
+              </div>
+              <div>
+                <img src="assets/entretien.jpg" />
+                <span>
+                  Une panne de votre système de climatisation peut être
+                  caractérisée par :
+                  <ul>
+                    <li>Un fonctionnement par intermittence</li>
+                    <li>Des mauvaises odeurs</li>
+                    <li>Des bruits inhabituels</li>
+                    <li>Des voyants clignotants ou éteints</li>
+                    <li>Des fuites de liquide</li>
+                    <li>Des dysfonctionnements de la télécommande</li>
+                  </ul>
+                  Il est nécessaire d'agir rapidement pour prévenir des
+                  désagréments.<br /><br />
+                  Un entretien régulier permet de prolonger la durée de vie de
+                  votre installation et de prévenir les pannes. Pour votre
+                  confort, chaque entretien est constitué de :
+                  <ul>
+                    <li>Nettoyage des prés filtres</li>
+                    <li>Dépoussiérage de l'échangeur intérieur et extérieur</li>
+                    <li>
+                      Traitement de l'échangeur intérieur et extérieur avec
+                      produits anti bactériens et désodorisant
+                    </li>
+                    <li>Nettoyage du bac à condensation</li>
+                    <li>Nettoyage de la volute</li>
+                    <li>
+                      Resserrage et dépoussiérage des causses électriques
+                      intérieur et extérieur
+                    </li>
+                    <li>Contrôle des pressions et températures</li>
+                    <li>Mesure des performances énergétiques</li>
+                    <li>Nettoyage des caches plastiques intérieur</li>
+                  </ul>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
-        <img src="./assets/cdsud.svg">
-        <img src="./assets/prolians.svg"/>
-        <img src="./assets/yesss-fr.png"/>
+
+        <div id="marques" class="element">
+          <img src="./assets/daikin.png" />
+          <img src="./assets/mitsu.svg" />
+          <div>
+            <img src="./assets/heiwa_haut.png" />
+            <img src="./assets/heiwa_bas.png" />
+          </div>
+          <img src="./assets/cdsud.svg" />
+          <img src="./assets/prolians.svg" />
+          <img src="./assets/yesss-fr.png" />
+        </div>
+
+        <div id="contact" class="element">
+          <iframe
+            src="https://www.google.com/maps/d/embed?mid=10BcHStOtQmB6disg5RjhsMtzZLtqAK26"
+            width="640"
+            height="480"
+          ></iframe>
+          <span>
+            Matthias Pichard<br /><br />
+            7 rue du Jeu de Boules<br />
+            34110 Vic la Gardiole<br /><br />
+
+            06.71.97.83.46<br />
+            matth34750@gmail.com<br /><br />
+
+            N° SIRET 88452690600018
+          </span>
+        </div>
       </div>
-
-      <div id="contact" class="element">
-        <iframe src="https://www.google.com/maps/d/embed?mid=10BcHStOtQmB6disg5RjhsMtzZLtqAK26" width="640" height="480"></iframe>
-        <div id="coordonnees">Matthias Pichard<br/><br/>
-        7 rue du Jeu de Boules<br/>
-        34110 Vic la Gardiole<br/><br/>
-
-        06.71.97.83.46<br/>
-        matth34750@gmail.com<br/><br/>
-
-        N° SIRET 88452690600018
-      </div>
-      </div>
-
     </div>
-  </div>
-
-</body>
+  </body>
 </html>
